@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Building a REST Async API with Akka
 
-You can use the [editor on GitHub](https://github.com/EnriqueEll/enriqueell.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The main goal for this post is to desgin and build a asynchronous operations RESTFull API using Akka. The main motivation to write this article is to answer the question:
+  - How I run long opeations without blocking my Client through RESTfull?
+That is a problem tha I can not just solve this problem with different concurrency model like an actor model or an event bus (with RxJava). Also, this different than run asynchronous requests in backgroud which is most of Async HTTP-Servers does today, which is really good to increase thorughput for IO intencive APIs.
+if you want to make this API secury, whait for the [this article](http://As part of this Article I will show how make it secury with JWT).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+So lets start code
 
-### Markdown
+### Setting up your project
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+´´´scala
+def test()
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EnriqueEll/enriqueell.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
