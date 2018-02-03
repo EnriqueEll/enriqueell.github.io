@@ -9,6 +9,17 @@ So lets start code
 
 ### Setting up your project
 
-´´´scala
-def test()
 
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+
+```scala
+def test()
+```
+
+![image](src) test
