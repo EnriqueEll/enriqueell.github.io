@@ -1,26 +1,16 @@
-## Building a REST Async API with Akka
+## Building a Async REST API with Akka HTTP
 
 The main goal for this post is to desgin and build a asynchronous operations RESTFull API using Akka. The main motivation to write this article is to answer the question:
-  - How I run long opeations without blocking my Client through RESTfull?
+  - How I run long opeations without blocking my Client through a RESTfull API?
 
-That is a problem tha I can not just solve this problem with different concurrency model like an actor model or an event bus (with RxJava). Also, this different than run asynchronous requests in backgroud which is most of Async HTTP-Servers does today, which is really good to increase thorughput for IO intencive APIs.
-if you want to make this API secury, whait for the [this article](http://As part of this Article I will show how make it secury with JWT).
+It is a problem that can not just be solved with different concurrency model like Akka actor model or an event bus (with RxJava). This different than run asynchronous requests in backgroud, which is most of Async HTTP-Servers does today. If you are using the right Future or CompletableFuture, Async HTTP-Servers are really good to increase throughput for IO intencive APIs.
 
-So lets start code
+As part of this article I also show how to use the Akka Actor Model and Akka HTTP. For next Blog articles I will show you how to secury HTTP API and use the Akka Cluster Feature.
+
+So lets start code.The complete code for this article is available [here]()
 
 ### Setting up your project
-
-
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 
 ```scala
 def test()
 ```
-
-![image](src) test
